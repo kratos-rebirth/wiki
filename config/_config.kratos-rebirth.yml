@@ -21,9 +21,9 @@ nav:
     - label: 快速开始
       icon: bolt
       url: /posts/quickstart/
-    - label: 配置概览
+    - label: 配置结构
       icon: cogs
-      url: /posts/config-overview/
+      url: /posts/configurations/
     - label: 所有文章
       icon: list
       url: /contents/
