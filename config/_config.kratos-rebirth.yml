@@ -1,0 +1,90 @@
+search:
+  includes:
+    - post
+    - page
+
+image:
+  favicon: "/assets/favicon.png"
+  avatar: "https://dev.krt.moe/demo-assets/logo.webp"
+  banner:
+    light: "https://dev.krt.moe/demo-assets/banner.webp"
+    dark: "https://dev.krt.moe/demo-assets/banner_dark.webp"
+  background:
+    light: "https://dev.krt.moe/demo-assets/bg.webp"
+    dark: "https://dev.krt.moe/demo-assets/bg.webp"
+
+nav:
+  items:
+    - label: 首页
+      icon: home
+      url: /
+    - label: 快速开始
+      icon: bolt
+      url: /posts/quickstart/
+    - label: 配置概览
+      icon: cogs
+      url: /posts/config-overview/
+    - label: 所有文章
+      icon: list
+      url: /contents/
+      float_right: true
+    - label: 其他链接
+      icon: link
+      float_right: true
+      submenu:
+        - label: 主题仓库
+          url: https://github.com/Candinya/Kratos-Rebirth
+        - label: 周边生态
+          url: https://eco.krt.moe
+        - label: 实例列表
+          url: https://awesome.krt.moe
+
+footer:
+  links:
+    - icon: github
+      link: https://github.com/Candinya
+  components:
+    uptime:
+      since: "2024-06-23 00:08:16"
+    additional:
+      - - 由 <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a> 强力驱动
+        - 在 <a href="https://github.io" target="_blank">Github Pages</a> 暖心托管
+
+sidebar:
+  widgets:
+    - about
+    - splitter
+    - toc
+    - category
+    - tagcloud
+    - posts
+
+share:
+  title: "分享内容"
+  message: "扫描此处的二维码即可分享。"
+
+donate:
+  enable: false
+
+inactive_notice:
+  enable: false
+
+copyright_notice:
+  append_copy:
+    enable: false
+
+comments:
+  core:
+    enable_at:
+      - post
+      - page
+    template:
+      _shared: <div id="gitalk-container" class="kr-comments lazy-load" data-path="$PATH"></div>
+
+additional_injections:
+  head: |
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.css" integrity="sha512-0hsIlRjJbiUWaKMhXXNDmjWI2qPvUlhNBLHMhqeF5jIma+bedec27N5FoT2JEeHz5TUmOGCsm1Y89EsX/P0wOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link src="/comments/gitalk.css" />
+  after_footer: |
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js" integrity="sha512-Z6q/CxNjbGeWbPamDjp/I737f5LnynAOjJl85FlT75YW3eWmldnn2wj3nhMVEaqMeatyUmvKyfCaM5TND0yRhQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer async src="/comments/gitalk.js"></script>
