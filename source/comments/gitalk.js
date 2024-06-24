@@ -11,9 +11,8 @@
         return;
       }
       const path = container.getAttribute("data-path");
-      const hashID = await window.crypto.subtle.digest("SHA-1", new TextEncoder().encode(path));
       const gitalk = new Gitalk(Object.assign({
-          id: hashID,
+          id: path,
           path: path,
       }, {
         clientID: 'GitHub Application Client ID',
