@@ -87,4 +87,4 @@ additional_injections:
     <link src="/comments/gitalk.css" />
   after_footer: |
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js" integrity="sha512-Z6q/CxNjbGeWbPamDjp/I737f5LnynAOjJl85FlT75YW3eWmldnn2wj3nhMVEaqMeatyUmvKyfCaM5TND0yRhQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer async src="/comments/gitalk.js"></script>
+    <script src="/comments/gitalk.js"></script>

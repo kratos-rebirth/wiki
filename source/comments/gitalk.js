@@ -28,7 +28,7 @@
   };
 
   window.loadComments = loadComments;
-  window.addEventListener('pjax:complete', () => {
+  window.addEventListener('pjax:before', () => {
     window.loadComments = loadComments;
   });
 })();
