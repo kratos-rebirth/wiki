@@ -42,7 +42,9 @@ nav:
 footer:
   links:
     - icon: github
-      link: https://github.com/Candinya
+      link: https://github.com/kratos-rebirth/wiki
+    - icon: rss
+      link: /atom.xml
   components:
     uptime:
       since: "2024-06-23 00:08:16"
