@@ -11,6 +11,7 @@ toc: false
 - [配置结构](/posts/configurations/)
 - [模板参数](/posts/template-variables/)
 - [标签组件](/posts/tag-widgets/)
+- [链接列表](/posts/linklist/)
 
 {% collapse "旧版本(V2)用户的迁移说明" %}
 
@@ -24,5 +25,6 @@ toc: false
 ## 开发者的实验室
 
 - [项目结构](/posts/project-structure/)
+- [PJAX 事件](/posts/pjax-events/)
 - [二次开发流程](/posts/theme-develop-workflow/)
 - [周边开发流程](/posts/ecosystem-develop-workflow/)
