@@ -32,6 +32,8 @@ Kratos : Rebirth 的主题结构与一般的 Hexo 主题（如默认的 landscap
   - `search.js` 提供搜索功能。
   - `tag-widgets.js` 提供主题自定义的 [标签组件](/posts/tag-widgets/) 。
   - `gen-jsconfig.js` 为 JavaScript 脚本生成运行时所需的配置项。
+  - `process-template.js` 处理模板字符串使用的工具函数。
+  - `icon-to-html.js` 图标处理函数（从 FontAwesome 中获取，或直接使用裸 HTML ）
 - `.prettierignore` 和 `.prettierrc` 是代码格式化工具 Prettier 使用的配置。
 - `package.json` 和 `pnpm-lock.yaml` 是使用 pnpm 作为软件包及依赖管理工具时，所需的配置文件。
   - `package.json` 是所有 Node.JS 项目都有的项目信息文件。

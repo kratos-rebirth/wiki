@@ -108,6 +108,14 @@ V3 版本中不再为友链设置单独的功能，而是使用 `linklist` 组�
 
 由于 V2 版本中使用的随机图片存在版权问题，在 V3 版本中不再提供这些资源。我们提供了一个简单的实现脚本样例供您参考： [随机文章封面图](https://eco.krt.moe/posts/other-random-post-cover/) 。
 
+### 标签页失去焦点（离开站点）时的提示
+
+这个功能的设计可能会引发访问者的不必要的误会，因而在 V3 版本中它们已不再被内置于主题中，而是以外部挂载的插件形式来引入。我们提供了一个简单的实现供您参考： [站点离开提示](https://eco.krt.moe/posts/effect-change-title-when-leave/) 。
+
+### 站点播放器 （APlayer 与 Meting）
+
+为了及时跟进 APlayer 与 Meting 的版本更新，主题已经不再内置这个模块，而是使用外部挂载的插件形式来引入。我们提供了一份文档可供您参考： [APlayer](https://eco.krt.moe/posts/widget-aplayer/) 。
+
 ## Front-Matter 更新
 
 V3 版本的 Front-Matter 主要变更如下：
