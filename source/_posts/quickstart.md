@@ -12,10 +12,16 @@ excerpt: "快速开始使用 Kratos : Rebirth 主题"
 ---
 ## 准备环境
 
+Hexo 是一个基于 [Node.js] 的项目，所以您需要先准备 Node.js 环境来运行它。
+- 我们推荐使用最新的 Node.js 稳定发布版本以支持新的特性，但通常情况下您也可以使用最新的 LTS 版本，具体差异请参考 Node.js 的版本发布说明。
+- 我们没有测试过部分兼容的第三方环境（例如 bun 或 deno ）的支持，如果您在使用这些工具时遇到了奇怪的问题，欢迎随时 [开启一个 issue] 来让我们一起研究。
+
 我们推荐您使用 `pnpm` 作为 Node.js 项目的依赖项管理工具。您可以参照 [pnpm 的 安装教程] 来安装它。
 
 Kratos : Rebirth 是一个 Hexo 主题，所以您也需要在您的设备上预先 [安装 Hexo 命令行工具]。当然，如果您希望使用进阶管理方案，那么可以忽略这一步。
 
+[Node.js]: https://nodejs.org/
+[开启一个 issue]: https://github.com/Candinya/Kratos-Rebirth/issues/new/choose
 [pnpm 的 安装教程]: https://pnpm.io/zh/installation
 [安装 Hexo 命令行工具]: https://hexo.io/zh-cn/docs/
 
