@@ -52,7 +52,7 @@ share:
       color: "#e6162d"
       link: "https://service.weibo.com/share/share.php?url=$URL&title=$TITLE"
     - name: "X"
-      html: |
+      icon: |
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
