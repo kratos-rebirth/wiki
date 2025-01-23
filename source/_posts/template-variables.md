@@ -28,6 +28,8 @@ show_in: ("home" | "category" | "tag")[] ; // 限定文章展示的位置
 comments: boolean; // 文章/页面是否开启评论区。默认为 true 。
 donate: boolean; // 在站点级打赏功能启用时，单独控制文章/页面是否开启打赏功能。默认为 true 。
 share: boolean; // 在站点级分享功能启用时，单独控制文章/页面是否开启分享功能。默认为 true 。
+show_copyright: boolean; // 针对每个单独的文章或页面，选择是否在底部显示版权提示。该选项会覆盖主题设置中的对应选项，用于与主题设置不同的情况。默认为 undefined ，即遵循主题设置。
+copyright_notice_template: string; // 针对需要展示版权信息的页面，如果需要使用与主题设置中不同的版权提示模板，可以在这里设置。可以使用 HTML 标签。默认为 undefined ，即遵循主题设置。
 ```
 
 ## 样例
