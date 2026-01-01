@@ -17,6 +17,53 @@ excerpt: "对主题周边生态组件的开发流程"
 - 在 `head` 引入样式表文件
 - 在 `footer` 配置段中往 DOM 中加入组件
 - 在 `after_footer` 引入执行脚本
+- 在 `tools` 引入页面右下角浮动工具栏里的功能按钮（如果有需要的话）
+
+{% collapse "注入模板的格式" %}
+
+注入模板会被直接作为 HTML 字符串添加到模板中的对应位置，所以此处的注入模板也应当是 HTML 格式。特别地，为了更好地表现多行文本，您可以考虑使用 `|` 来引出多行内容，就像这样：
+
+```yaml
+additional_injections:
+  head: |
+    <!-- 注入的内容... -->
+    <!-- 注入的内容... -->
+  footer: |
+    <!-- 注入的内容... -->
+    <!-- 注入的内容... -->
+  after_footer: |
+    <!-- 注入的内容... -->
+    <!-- 注入的内容... -->
+  tools:  |
+    <!-- 注入的内容... -->
+    <!-- 注入的内容... -->
+```
+
+而 tools 部分，为了保持主题一致性，推荐您使用这样的格式设计功能按钮（此处使用的图标仅供示例，您可以自由指定 id 或 onclick 等不涉及渲染样式的属性以便实现功能）：
+
+```html
+<div class="box">
+    <span class="fa fa-snowflake-o"></span>
+</div>
+```
+
+所以特别地， tools 的注入项会看起来像这样：
+
+```yaml
+additional_injections:
+  tools: |
+    <div class="box">
+        <span class="fa fa-snowflake-o"></span>
+    </div>
+    <div class="box">
+        <span class="fa fa-user-plus"></span>
+    </div>
+    <div class="box">
+        <span class="fa fa-heartbeat"></span>
+    </div>
+```
+
+{% endcollapse %}
 
 {% alertbar info "
 
